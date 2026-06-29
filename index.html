@@ -1,0 +1,473 @@
+
+html_content = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austine Dev | IT Student Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar_inner">
+            <a href="#home" class="navbar_logo">AD<span class="navbar_logo-dot">.</span></a>
+
+            <nav class="navbar_links">
+                <a href="#about">About</a> 
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a> 
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="home" class="hero">
+        <div class="hero_content reveal">
+            <p class="hero_eyebrow">Hello, my name is</p>
+
+            <h1 class="hero_name">Austine Dev</h1>
+
+            <h2 class="hero_role">IT Student & Aspiring Software Developer</h2>
+
+
+            <div class="hero_terminal">
+                <span class="hero_terminal-dot hero_terminal-dot--red"></span>
+                <span class="hero_terminal-dot hero_terminal-dot--yellow"></span>
+                <span class="hero_terminal-dot hero_terminal-dot--green"></span>
+                <span class="hero_terminal-text">
+                    Austine@portfolio:~$ <span id="typedText"></span><span class="hero_cursor">|</span>
+                </span>
+            </div>
+
+            <p class="hero_description">
+                I build clean, functional web and mobile apps while learning the
+                tools real developers use everyday. Currently sharpening my Skills
+                in JavaScript, React, Python, and Java working towards becoming a professional software developer.
+            </p>
+
+            <div class="hero_buttons">
+                <a href="#projects" class="btn btn--primary">View My Work</a>
+                <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+            </div>
+        </div>
+
+        <div class="hero_image-wrap reveal tilt-card" data-tilt>
+            <img 
+                class="hero_image"
+                src="images/my profile pics.jpeg" 
+                alt="Austine Dev - Software Developer"
+                width="500"
+                height="500"
+            >
+            <div class="hero_image-glow"></div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h2 class="section-title reveal">
+            <span class="section-title_index">01</span> About Me
+        </h2>
+
+        <div class="about_grid">
+            <div class="about_text reveal">
+                <p>
+                    I'm a final-year IT student with interest in full-stack
+                    development. My journey started with simple HTML pages, and it has
+                    grown into building interactive websites and small mobile apps as
+                    part of my coursework and personal projects.
+                </p>
+                <p>
+                   I'm a builder at heart. I love transforming ideas into functional software,
+                    solving real problems through code, and chasing that breakthrough moment 
+                    when a tough bug finally gives way.
+                </p>
+
+                <ul class="about_facts">
+                    <li class="tilt-card" data-tilt><span class="about_emoji">🎓</span> BSc Information Technology, 4th Year</li>
+                    <li class="tilt-card" data-tilt><span class="about_emoji">📍</span> Based in Lagos, Nigeria</li>
+                    <li class="tilt-card" data-tilt><span class="about_emoji">🚀</span> Open to internship opportunities</li>
+                </ul>
+            </div>
+
+            <div class="about_image-wrap reveal tilt-card" data-tilt>
+                <img 
+                    src="images/About me.png"
+                    alt="Austine Dev working on a laptop"
+                    width="450"
+                    height="350"
+                    loading="lazy"
+                >
+                <div class="about_image-glow"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="skills">
+        <h2 class="section-title reveal">
+            <span class="section-title_index">02</span> My Tech Stack
+        </h2>
+
+        <p class="section-subtitle reveal">
+            Technologies and languages I currently use or actively learning.
+        </p>
+
+        <div class="skills_grid">
+            <div class="skills-card reveal tilt-card glow-orange" data-delay="0" data-tilt>
+                <div class="skills-card_glow"></div>
+                <div class="skills-card_icon">🌐</div>
+                <h3>HTML & CSS</h3>
+                <p>Structuring and styling responsive web pages from scratch.</p>
+            </div>
+
+            <div class="skills-card reveal tilt-card glow-cyan" data-delay="1" data-tilt>
+                <div class="skills-card_glow"></div>
+                <div class="skills-card_icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>Adding interactivity, handling events, and working with DOM.</p>
+            </div>
+
+            <div class="skills-card reveal tilt-card glow-purple" data-delay="2" data-tilt>
+                <div class="skills-card_glow"></div>
+                <div class="skills-card_icon">🐍</div>
+                <h3>Python</h3>
+                <p>Data structures, algorithms, and backend scripting fundamentals.</p>
+            </div>
+
+            <div class="skills-card reveal tilt-card glow-blue" data-delay="3" data-tilt>
+                <div class="skills-card_glow"></div>
+                <div class="skills-card_icon">⚛️</div>
+                <h3>React</h3>
+                <p>Building component-based user interfaces for the web.</p>
+            </div>
+
+            <div class="skills-card reveal tilt-card glow-pink" data-delay="4" data-tilt>
+                <div class="skills-card_glow"></div>
+                <div class="skills-card_icon">📱</div>
+                <h3>React Native</h3>
+                <p>Turning React skills into cross-platform mobile apps.</p>
+            </div>
+
+            <div class="skills-card reveal tilt-card glow-red" data-delay="5" data-tilt>
+                <div class="skills-card_glow"></div>
+                <div class="skills-card_icon">☕</div>
+                <h3>Java</h3>
+                <p>Object-oriented programming and backend logic fundamentals.</p>
+            </div>
+
+            <div class="skills-card reveal tilt-card glow-green" data-delay="6" data-tilt>
+                <div class="skills-card_glow"></div>
+                <div class="skills-card_icon">🍃</div>
+                <h3>Spring</h3>
+                <p>Learning to build REST APIs with the Spring framework.</p>
+            </div>
+
+            <div class="skills-card reveal tilt-card glow-yellow" data-delay="7" data-tilt>
+                <div class="skills-card_glow"></div>
+                <div class="skills-card_icon">🔮</div>
+                <h3>Kotlin</h3>
+                <p>Exploring modern Android development with Kotlin.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects" id="projects"> 
+        <h2 class="section-title reveal">
+            <span class="section-title_index">03</span> Projects
+        </h2>
+
+        <p class="section-subtitle reveal">
+            A few things I've built to sharpen my skills while learning. Click the links to see the 
+            live demo or GitHub source code.
+        </p>
+
+        <div class="projects_grid">
+            <!-- Project 1: Task Manager -->
+            <article class="project-card reveal tilt-card glow-orange" data-delay="0" data-tilt>
+                <div class="project-card_glow"></div>
+                <div class="project-card_image-wrap">
+                    <img 
+                        src="images/project-taskmanager.jpg" 
+                        alt="Task Manager App Dashboard"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="project-card_body">
+                    <h3>Task Manager App</h3>
+                    <p>
+                        A simple to-do list web app where users can add, complete, and
+                        delete tasks. Built to practice DOM manipulation and local
+                        storage in JavaScript.
+                    </p>
+                    <div class="project-card_tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-card_links">
+                        <a href="#" class="link">Live Demo →</a>
+                        <a href="https://github.com/Austin-dev7" target="_blank" rel="noopener noreferrer" class="link">Austin-dev7 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2: Weather Dashboard -->
+            <article class="project-card reveal tilt-card glow-cyan" data-delay="1" data-tilt>
+                <div class="project-card_glow"></div>
+                <div class="project-card_image-wrap">
+                    <img 
+                        src="images/project-weather.jpg" 
+                        alt="Weather Dashboard App"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="project-card_body">
+                    <h3>Weather Dashboard App</h3>
+                    <p>
+                        A React app that fetches live weather data from a public API and
+                        displays the forecast for any city the user searches for.
+                    </p>
+                    <div class="project-card_tags">
+                        <span class="tag">React</span>
+                        <span class="tag">API</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <div class="project-card_links">
+                        <a href="#" class="link">Live Demo →</a>
+                        <a href="https://github.com/Austin-dev7" target="_blank" rel="noopener noreferrer" class="link">Austin-dev7 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3: Library Catalog System -->
+            <article class="project-card reveal tilt-card glow-purple" data-delay="2" data-tilt>
+                <div class="project-card_glow"></div>
+                <div class="project-card_image-wrap">
+                    <img 
+                        src="images/project-library.jpg" 
+                        alt="Library Catalog System"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="project-card_body">
+                    <h3>Library Catalog System</h3>
+                    <p>
+                        A Java desktop application for managing book records, built as
+                        part of my Object-Oriented Programming coursework.
+                    </p>
+                    <div class="project-card_tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">OOP</span>
+                        <span class="tag">JavaFX</span>
+                    </div>
+                    <div class="project-card_links">
+                        <a href="#" class="link">Live Demo →</a>
+                        <a href="https://github.com/Austin-dev7" target="_blank" rel="noopener noreferrer" class="link">Austin-dev7 →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4: Sorting Visualizer -->
+            <article class="project-card reveal tilt-card glow-blue" data-delay="3" data-tilt>
+                <div class="project-card_glow"></div>
+                <div class="project-card_image-wrap">
+                    <img 
+                        src="images/project-sorting.jpg" 
+                        alt="Sorting Visualizer App"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="project-card_body">
+                    <h3>Sorting Visualizer</h3>
+                    <p>
+                        An interactive algorithm visualizer that demonstrates how sorting
+                        algorithms work step by step. Features Bubble Sort, Selection Sort,
+                        and Insertion Sort with adjustable speed and array size.
+                    </p>
+                    <div class="project-card_tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML Canvas</span>
+                        <span class="tag">Algorithms</span>
+                    </div>
+                    <div class="project-card_links">
+                        <a href="#sorting-demo" class="link">Try Live Demo →</a>
+                        <a href="https://github.com/Austin-dev7" target="_blank" rel="nooper noreferrer" class="link">Austine-dev7→</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5: Study Planner App -->
+            <article class="project-card reveal tilt-card glow-pink" data-delay="4" data-tilt>
+                <div class="project-card_glow"></div>
+                <div class="project-card_image-wrap">
+                    <img 
+                        src="images/project-studyplanner.jpg" 
+                        alt="Study Planner App"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="project-card_body">
+                    <h3>Study Planner App</h3>
+                    <p>
+                        A React Native mobile app for students to organize study schedules,
+                        track assignments, manage deadlines, and monitor progress with
+                        analytics dashboards.
+                    </p>
+                    <div class="project-card_tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Expo</span>
+                        <span class="tag">Mobile</span>
+                    </div>
+                    <div class="project-card_links">
+                        <a href="#" class="link">Live Demo →</a>
+                        <a href="https://github.com/Austin-dev" target="_blank" rel="nooper noreferrer" class="link">Austin-dev7 →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- LIVE SORTING VISUALIZER DEMO SECTION -->
+    <section id="sorting-demo" class="sorting-demo-section">
+        <h2 class="section-title reveal">
+            <span class="section-title_index">🎯</span> Live Sorting Visualizer
+        </h2>
+        <p class="section-subtitle reveal">
+            Try it right here! Select an algorithm, adjust the speed, and watch the sorting happen.
+        </p>
+        
+        <div class="sorting-container reveal tilt-card" data-tilt>
+            <div class="sorting-controls">
+                <div class="control-group">
+                    <label>Algorithm</label>
+                    <select id="algoSelect">
+                        <option value="bubble">Bubble Sort</option>
+                        <option value="selection">Selection Sort</option>
+                        <option value="insertion">Insertion Sort</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label>Array Size: <span id="sizeValue">50</span></label>
+                    <input type="range" id="sizeSlider" min="10" max="100" value="50">
+                </div>
+                <div class="control-group">
+                    <label>Speed: <span id="speedValue">50ms</span></label>
+                    <input type="range" id="speedSlider" min="1" max="200" value="50">
+                </div>
+                <div class="control-buttons">
+                    <button id="startBtn" class="sort-btn sort-btn--start">▶ Start</button>
+                    <button id="pauseBtn" class="sort-btn sort-btn--pause">⏸ Pause</button>
+                    <button id="resetBtn" class="sort-btn sort-btn--reset">↻ Reset</button>
+                </div>
+            </div>
+            
+            <div class="sorting-canvas-container">
+                <div id="sortingBars"></div>
+            </div>
+            
+            <div class="sorting-stats">
+                <div class="stat">
+                    <span class="stat-label">Comparisons:</span>
+                    <span id="comparisons" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Swaps:</span>
+                    <span id="swaps" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Time:</span>
+                    <span id="time" class="stat-value">0.00s</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <h2 class="section-title reveal">
+            <span class="section-title_index">04</span> Get In Touch
+        </h2>
+
+        <p class="section-subtitle reveal">
+            I'm currently looking for internship opportunities. Feel free to reach
+            out through any of the platforms below.
+        </p>
+
+        <div class="contact_grid">
+            <a href="mailto:nwobiaugustineebuka@gmail.com" class="contact-card reveal tilt-card glow-orange" data-delay="0" data-tilt>
+                <div class="contact-card_glow"></div>
+                <div class="contact-card_icon">✉️</div>
+                <h3>Email</h3>
+                <p>nwobiaugustineebuka@gmail.com</p>
+            </a>
+
+            <a href="https://github.com/Austin-dev7" target="_blank" rel="noopener noreferrer" class="contact-card reveal tilt-card glow-cyan" data-delay="1" data-tilt>
+                <div class="contact-card_glow"></div>
+                <div class="contact-card_icon">💻</div>
+                <h3>GitHub</h3>
+                <p>github.com/Austin-dev7</p>
+            </a>
+
+            <a href="https://linkedin.com/in/austin-dev7-b325633bb" target="_blank" rel="noopener noreferrer" class="contact-card reveal tilt-card glow-blue" data-delay="2" data-tilt>
+                <div class="contact-card_glow"></div>
+                <div class="contact-card_icon">👔</div>
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/austin-dev7-b325633bb</p>
+            </a>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>Designed & built by <span class="footer-name">Austine Dev</span> &copy; <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
