@@ -20,10 +20,22 @@ This project showcases the portfolio of Austine Dev, an IT student and aspiring 
 - `style.css` — styling and layout
 - `script.js` — interactive JavaScript features
 - `images/` — image assets used on the site
+- `weather-app/` — standalone WeatherNow app with real weather search
+
+## Additional Project
+
+This portfolio links to a separate Weather app repo:
+- [WeatherNow App](https://github.com/Austin-dev7/Weather-App)
 
 ## Live Preview
 
 To preview locally, open `index.html` in a browser or use VS Code Live Server.
+
+## WeatherNow App Local Run
+
+1. Open `weather-app/` in VS Code.
+2. Open `weather-app/index.html` in your browser or use Live Server.
+3. Search any city and view live weather data.
 
 ## How to Use
 
